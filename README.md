@@ -6,7 +6,7 @@ Clone the repository
 
 ```sh
 git clone https://github.com/technology-ebay-de/werkstatt.git
-cd werkstatt
+cd werkstatt/api
 ```
 
 Install dependencies
@@ -18,7 +18,7 @@ pip install -r requirements-dev.txt
 Run the application in development mode
 
 ```sh
-FLASK_APP=werkstatt.py python -m flask run
+FLASK_APP=werkstatt FLASK_ENV=development FLASK_RUN_PORT=5001 flask run
 ```
 
-Open [localhost:5000](http://localhost:5000) in your browser.
+Open [localhost:5001](http://localhost:5001) in your browser.
