@@ -1,5 +1,5 @@
-import { CHANGE_COLOR } from './actions';
-import { combineReducers } from '@modular-toolkit/bricks';
+import { CHANGE_COLOR } from './actions'
+import { combineReducers } from '@modular-toolkit/bricks'
 
 export default combineReducers({
     page(state = {}, action = {}) {
@@ -11,9 +11,9 @@ export default combineReducers({
                         background: action.background,
                         header: action.header
                     }
-                };
+                }
             default:
-                return state;
+                return state
         }
     }
-});
+})

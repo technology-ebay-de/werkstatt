@@ -1,1 +1,1 @@
-export { default as ScratchPad } from './ScratchPad';
+export { default as ScratchPad } from './ScratchPad'
