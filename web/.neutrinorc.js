@@ -1,22 +1,25 @@
 module.exports = {
+  options: {
+    root: __dirname
+  },
   use: [
     [
       "@neutrinojs/eslint",
       {
-        eslint: {
-          rules: {
-            quotes: [
-              "error",
-              "double",
-              {
-                avoidEscape: true
-              }
-            ],
-            semi: ["error", "never"],
-            indent: ["error", 2, { SwitchCase: 1 }]
+        baseConfig: {
+            rules: {
+              quotes: [
+                "error",
+                "double",
+                {
+                  avoidEscape: true
+                }
+              ],
+              semi: ["error", "never"],
+              indent: ["error", 2, { SwitchCase: 1 }]
+            }
           }
         }
-      }
     ],
     [
       "@neutrinojs/react",

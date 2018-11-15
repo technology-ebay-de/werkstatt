@@ -1,4 +1,5 @@
 **/.cache
+.eslintcache
 
 # IntelliJ IDEA
 .idea
@@ -10,4 +11,3 @@ lerna-debug.log*
 
 # Dependency directories
 node_modules/
-
