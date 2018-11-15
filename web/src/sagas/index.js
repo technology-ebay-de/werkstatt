@@ -1,3 +1,3 @@
-import rootSaga from './rootSaga'
+import rootSaga from "./rootSaga"
 
 export default rootSaga

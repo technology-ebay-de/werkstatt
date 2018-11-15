@@ -1,3 +1,3 @@
-import ScratchPad from './ScratchPadContainer';
+import ScratchPad from "./ScratchPadContainer"
 
-export default ScratchPad;
+export default ScratchPad
