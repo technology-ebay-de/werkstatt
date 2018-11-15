@@ -3,32 +3,15 @@ module.exports = {
     root: __dirname
   },
   use: [
+    '@neutrinojs/standardjs',
     [
-      "@neutrinojs/eslint",
-      {
-        baseConfig: {
-            rules: {
-              quotes: [
-                "error",
-                "double",
-                {
-                  avoidEscape: true
-                }
-              ],
-              semi: ["error", "never"],
-              indent: ["error", 2, { SwitchCase: 1 }]
-            }
-          }
-        }
-    ],
-    [
-      "@neutrinojs/react",
+      '@neutrinojs/react',
       {
         html: {
-          title: "werkstatt"
+          title: 'werkstatt'
         }
       }
     ],
-    "@neutrinojs/jest"
+    '@neutrinojs/jest'
   ]
 }

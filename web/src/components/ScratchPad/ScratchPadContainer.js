@@ -1,9 +1,9 @@
-import { compose, setDisplayName } from "recompose"
-import { connect } from "react-redux"
-import ScratchPad from "./ScratchPad"
+import { compose, setDisplayName } from 'recompose'
+import { connect } from 'react-redux'
+import ScratchPad from './ScratchPad'
 
 const enhance = compose(
-  setDisplayName("ScratchPadContainer"),
+  setDisplayName('ScratchPadContainer'),
   connect()
 )
 

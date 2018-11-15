@@ -1,13 +1,13 @@
-import React from "react"
-import { render } from "react-dom"
-import { Provider } from "react-redux"
-import { ScratchPad } from "./components"
-import configureStore from "./configureStore"
-import "./main.css"
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { ScratchPad } from './components'
+import configureStore from './configureStore'
+import './main.css'
 
 const store = configureStore()
 
-function App() {
+function App () {
   return (
     <Provider store={store}>
       <ScratchPad />
@@ -15,4 +15,4 @@ function App() {
   )
 }
 
-render(<App />, document.getElementById("root"))
+render(<App />, document.getElementById('root'))

@@ -1,1 +1,1 @@
-export * from "./changeColor"
+export * from './changeColor'

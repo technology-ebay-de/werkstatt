@@ -1,6 +1,6 @@
 export default () => ({
   page: {
-    title: "Modular Toolkit Demo",
+    title: 'Modular Toolkit Demo',
     color: {}
   }
 })

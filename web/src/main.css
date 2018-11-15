@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
 /* ------------- */
 
@@ -133,7 +133,7 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -148,7 +148,7 @@ table {
 */
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #1d1d1b;
   background-color: #78b9e6;
   padding: 8px;
