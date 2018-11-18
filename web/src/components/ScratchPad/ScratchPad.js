@@ -1,6 +1,10 @@
 import React from 'react'
-import './scratch-pad.css'
+import { CodeBlock } from '../'
 
-const ScratchPad = ({ changeColor }) => <main className='scratch-pad' />
+const ScratchPad = ({ title, codeBlocks }) =>
+  <main className='scratch-pad'>
+    <h1>{title}</h1>
+    {codeBlocks.map((block) => (<CodeBlock content={block} />))}
+  </main>
 
 export default ScratchPad

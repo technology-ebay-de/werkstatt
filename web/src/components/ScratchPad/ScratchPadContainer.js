@@ -4,7 +4,7 @@ import ScratchPad from './ScratchPad'
 
 const enhance = compose(
   setDisplayName('ScratchPadContainer'),
-  connect()
+  connect(({ scratchPad: { title, codeBlocks } }) => ({ title, codeBlocks }))
 )
 
 export default enhance(ScratchPad)

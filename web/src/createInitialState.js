@@ -1,7 +1,14 @@
 export default () => ({
-  page: {
-    title: 'Modular Toolkit Demo',
-    color: {}
+  scratchPad: {
+    title: 'Hello world',
+    codeBlocks: [
+      {
+        code: "foo = 'Hello world"
+      },
+      {
+        code: 'print(foo)'
+      }
+    ]
   }
 })
 
