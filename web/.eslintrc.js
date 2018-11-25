@@ -1,3 +1,7 @@
-const neutrino = require('neutrino')
-
-module.exports = neutrino().eslintrc()
+module.exports = {
+  extends: [
+    'standard',
+    'standard-jsx'
+  ],
+  parser: 'babel-eslint'
+};

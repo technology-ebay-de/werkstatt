@@ -3,7 +3,14 @@ module.exports = {
     root: __dirname
   },
   use: [
-    '@neutrinojs/standardjs',
+    [
+      '@neutrinojs/eslint',
+      {
+        eslint: {
+          useEslintrc: true
+        }
+      }
+    ],
     [
       '@neutrinojs/react',
       {
