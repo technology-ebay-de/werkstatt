@@ -1,4 +1,4 @@
-import { combineReducers } from '@modular-toolkit/bricks'
+import { combineReducers } from 'redux'
 
 export default combineReducers({
   scratchPad (state = {}, action = {}) {
