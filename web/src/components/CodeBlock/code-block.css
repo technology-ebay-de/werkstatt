@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+.CodeMirror {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+}
+
+.code-block {
+  border: 1px solid black;
+  margin-top: 50px;
+}
