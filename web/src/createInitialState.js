@@ -3,7 +3,7 @@ export default () => ({
     title: 'Hello world',
     codeBlocks: [
       {
-        code: "foo = 'Hello world"
+        code: "foo = 'Hello world'"
       },
       {
         code: 'print(foo)'
