@@ -9,14 +9,14 @@ const Root = styled('main')(({ theme: { spacing } }) => ({
   margin: '0 auto'
 }))
 
-const SketchPad = ({ title, codeBlocks }) => (
+const SketchPadPage = ({ title, codeBlocks }) => (
   <Root>
     <span>Current Sketch Pad</span>
     <h1>{title}</h1>
-    {codeBlocks.map(block => <CodeBlock key={block.code} content={block} />)}
+    {codeBlocks.map(block => <CodeBlock key={block.id} content={block} />)}
   </Root>
 )
 
-SketchPad.displayName = 'SketchPad'
+SketchPadPage.displayName = 'SketchPadPage'
 
-export default SketchPad
+export default SketchPadPage

@@ -1,5 +1,6 @@
 **/.cache
 .eslintcache
+.DS_Store
 
 # IntelliJ IDEA
 .idea
