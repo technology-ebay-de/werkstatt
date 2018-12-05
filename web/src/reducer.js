@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
 export default combineReducers({
-  scratchPad (state = {}, action = {}) {
+  sketchPad (state = {}, action = {}) {
     switch (action.type) {
       default:
         return state
