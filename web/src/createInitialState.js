@@ -1,5 +1,5 @@
 export default () => ({
-  scratchPad: {
+  sketchPad: {
     title: 'Hello world',
     codeBlocks: [
       {
