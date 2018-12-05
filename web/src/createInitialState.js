@@ -3,7 +3,7 @@ export default () => ({
     title: 'Hello world',
     codeBlocks: [
       {
-        code: 'from werkstatt import line_chart',
+        code: 'from werkstatt import line_chart, bar_chart, table',
         output: {
           type: 'none'
         }
