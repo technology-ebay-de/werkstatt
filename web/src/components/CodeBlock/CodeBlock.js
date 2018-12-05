@@ -4,6 +4,7 @@ import './code-block.css'
 import CodeMirror from 'codemirror'
 import 'codemirror/mode/python/python'
 import React from 'react'
+import Output from '../Output'
 
 export default class CodeBlock extends React.Component {
   constructor (props) {
@@ -25,10 +26,13 @@ export default class CodeBlock extends React.Component {
   }
 
   render () {
-    const { content: { code } } = this.props
-    return (<div className='code-block'>
-      <textarea defaultValue={code}
-        ref={this.codeInput} />
+    const { content: { code, output } } = this.props
+    return (<div>
+      <div className='code-block'>
+        <textarea defaultValue={code}
+          ref={this.codeInput} />
+      </div>
+      <Output output={output} />
     </div>)
   }
 }

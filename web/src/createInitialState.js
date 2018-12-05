@@ -3,10 +3,42 @@ export default () => ({
     title: 'Hello world',
     codeBlocks: [
       {
-        code: "foo = 'Hello world'"
+        code: 'from werkstatt import line_chart',
+        output: {
+          type: 'none'
+        }
       },
       {
-        code: 'print(foo)'
+        code: "data = [\n    {'name': 'foo', 'value': 12 },\n    {'name': 'bar', 'value': 6 }\n]\n\nline_chart(data)",
+        output: {
+          type: 'linechart',
+          data: [
+            {
+              name: 'foo',
+              value: 12
+            },
+            {
+              name: 'bar',
+              value: 6
+            }
+          ]
+        }
+      },
+      {
+        code: "data = [\n    {'name': 'foo', 'value': 12 },\n    {'name': 'bar', 'value': 6 }\n]\n\nbar_chart(data)",
+        output: {
+          type: 'barchart',
+          data: [
+            {
+              name: 'foo',
+              value: 12
+            },
+            {
+              name: 'bar',
+              value: 6
+            }
+          ]
+        }
       }
     ]
   }
