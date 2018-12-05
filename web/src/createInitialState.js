@@ -39,6 +39,35 @@ export default () => ({
             }
           ]
         }
+      },
+      {
+        code: "columns: [\n    {'Header': 'Name', 'accessor': 'name', 'minWidth': 20\},\n    {'Header': 'Value','accessor': 'value'}\n]\n\ndata = [\n    {'name': 'foo', 'value': 12 },\n    {'name': 'bar', 'value': 6 }\n]\n\ntable(columns, data)",
+        output: {
+          type: 'table',
+          data: {
+            data: [
+              {
+                name: 'foo',
+                value: 12
+              },
+              {
+                name: 'bar',
+                value: 6
+              }
+            ],
+            columns: [
+              {
+                Header: 'Name',
+                accessor: 'name',
+                minWidth: 20
+              },
+              {
+                Header: 'Value',
+                accessor: 'value'
+              }
+            ]
+          }
+        }
       }
     ]
   }
