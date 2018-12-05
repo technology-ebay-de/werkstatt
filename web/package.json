@@ -20,6 +20,8 @@
     "react-dom": "^16.6.3",
     "react-hot-loader": "^4.3.12",
     "react-redux": "^5.0.7",
+    "react-table": "^6.8.6",
+    "recharts": "^1.4.1",
     "recompose": "^0.30.0",
     "redux": "^4.0.1",
     "redux-saga": "^0.16.2",
