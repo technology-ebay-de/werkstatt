@@ -18,7 +18,7 @@ class Editor extends React.Component {
   componentDidMount () {
     const options = {
       theme: 'icecoder',
-      indentUnit: 2,
+      indentUnit: 4,
       smartIndent: true,
       lineNumbers: true
     }
