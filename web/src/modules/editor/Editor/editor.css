@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 .CodeMirror {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
   height: auto;
 }
