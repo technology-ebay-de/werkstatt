@@ -1,9 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Profile from '../Profile'
 import { Root, Logo } from './styles'
 
-const Header = () => (
+const Header = ({ currentUser }) => (
   <Root>
-    <Logo>werk.statt</Logo>
+    <Link to='/'><Logo>werk.statt</Logo></Link>
+    <Profile {...currentUser} />
   </Root>
 )
 

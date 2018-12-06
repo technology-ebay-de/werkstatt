@@ -4,7 +4,7 @@
 
 const grey = {
   900: '#2d2d2d',
-  800: '#414141',
+  800: '#3e3e3e',
   700: '#4f4f4f',
   600: '#5b5b5b',
   500: '#666666',
@@ -15,6 +15,11 @@ const grey = {
   50: '#eeeeee'
 }
 
+const common = {
+  black: '#1c1c1c',
+  white: '#f0f0f0'
+}
+
 const colors = {
   primary: '#0077cc',
   secondary: '#00cc55'
@@ -23,6 +28,7 @@ const colors = {
 const dark = {
   background: {
     default: grey[900],
+    fold: common.black,
     paper: grey[800]
   },
   text: {
