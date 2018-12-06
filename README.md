@@ -1,4 +1,6 @@
 # werkstatt
+[![Build Status](https://travis-ci.org/technology-ebay-de/werkstatt.svg?branch=master)](https://travis-ci.org/technology-ebay-de/werkstatt)
+
 A place to program in your browser.
 
 ## Development

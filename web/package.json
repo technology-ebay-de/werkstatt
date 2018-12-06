@@ -52,5 +52,9 @@
     ">0.2%",
     "not dead",
     "not op_mini all"
-  ]
+  ],
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6.4.1"
+  }
 }

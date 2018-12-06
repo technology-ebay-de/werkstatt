@@ -29,11 +29,13 @@ const dark = {
   background: {
     default: grey[900],
     fold: common.black,
-    paper: grey[800]
+    paper: grey[800],
+    paperInvert: grey[50]
   },
   text: {
     primary: grey[50],
-    secondary: grey[100]
+    secondary: grey[100],
+    primaryInvert: grey[900]
   }
 }
 

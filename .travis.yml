@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "10"
+
+install:
+  - npm --prefix=web ci
+script: npm --prefix=web run-script lint
+
+cache:
+  directories:
+    - "$HOME/.npm"
