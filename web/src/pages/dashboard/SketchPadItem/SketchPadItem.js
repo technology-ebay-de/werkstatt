@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Root, StyledLink } from './styles'
 
-const Item = ({ id, title, codeBlockCount }) => (
+const SketchPadItem = ({ id, title, codeBlockCount }) => (
   <Root padding>
     <h4>{title}</h4>
     <div>
@@ -11,6 +12,12 @@ const Item = ({ id, title, codeBlockCount }) => (
   </Root>
 )
 
-Item.displayName = 'Item'
+SketchPadItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  codeBlockCount: PropTypes.number
+}
 
-export default Item
+SketchPadItem.displayName = 'SketchPadItem'
+
+export default SketchPadItem

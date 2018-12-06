@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import ButtonBase from '../ButtonBase'
 
 const variants = {
@@ -34,6 +35,12 @@ const Button = styled(ButtonBase)(({ theme, color, variant, size }) => ({
   fontWeight: 500,
   lineHeight: 1
 }))
+
+Button.propTypes = {
+  color: PropTypes.oneOf(['primary', 'secondary']),
+  variant: PropTypes.oneOf(['filled', 'outline']),
+  size: PropTypes.oneOf(['small', 'medium', 'large'])
+}
 
 Button.defaultProps = {
   color: 'primary',
