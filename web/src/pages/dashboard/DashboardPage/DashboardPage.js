@@ -1,19 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { Page, PageHeader } from 'src/ui/page-layout'
+import SketchPadItem from '../SketchPadItem'
 
 const DashboardPage = ({ sketchPadList }) => (
   <Page as='main'>
     <PageHeader>
       <h1>Dashboard</h1>
     </PageHeader>
-    {sketchPadList && sketchPadList.map(item => (
-      <div key={item.id}>
-        <h2>{item.title}</h2>
-        <span>Code Block: {item.codeBlockCount}</span>
-        <Link to={`/sketchpad/${item.id}`}>More</Link>
-      </div>
-    ))}
+    {sketchPadList && (
+      <section>
+        <h2>My Sketch Pads</h2>
+        {sketchPadList.map(item => <SketchPadItem {...item} />)}
+      </section>
+    )}
   </Page>
 )
 
