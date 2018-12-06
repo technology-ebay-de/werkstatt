@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Root = styled('div')(({
   display: 'flex',
   flexWrap: 'wrap',
-  height: '100vh'
+  minHeight: '100vh'
 }))
 
 export const Content = styled('div')(({

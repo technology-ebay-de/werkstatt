@@ -1,7 +1,7 @@
-const { join } = require('path');
+const { join } = require('path')
 
-const MODULES = join(__dirname, 'node_modules');
-const APP_ROOT = process.cwd();
+const MODULES = join(__dirname, 'node_modules')
+const APP_ROOT = process.cwd()
 
 module.exports = {
   options: {

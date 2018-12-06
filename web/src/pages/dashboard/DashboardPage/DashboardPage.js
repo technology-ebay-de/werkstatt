@@ -10,12 +10,12 @@ const DashboardPage = ({ sketchPadList }) => (
     {sketchPadList && (
       <section>
         <h2>My Sketch Pads</h2>
-        {sketchPadList.map(item => <SketchPadItem {...item} />)}
+        {sketchPadList.map(item => <SketchPadItem key={item.id} {...item} />)}
       </section>
     )}
   </Page>
 )
 
-// DashboardPage.displayName = 'DashboardPage'
+DashboardPage.displayName = 'DashboardPage'
 
 export default DashboardPage
