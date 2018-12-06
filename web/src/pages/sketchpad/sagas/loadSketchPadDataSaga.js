@@ -6,7 +6,6 @@ export function * loadSketchPadData ({ id }) {
   let data
   try {
     data = fetchSketchPadData(id)
-    console.log({ data })
   } catch (error) {
     if (process.env.NODE_ENV === 'development') {
       // eslint-disable-next-line no-console

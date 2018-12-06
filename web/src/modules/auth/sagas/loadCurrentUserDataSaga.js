@@ -6,7 +6,6 @@ export function * loadSCurrentUserData ({ id }) {
   let data
   try {
     data = fetchCurrentUserData(id)
-    console.log({ data })
   } catch (error) {
     if (process.env.NODE_ENV === 'development') {
       // eslint-disable-next-line no-console

@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from 'src/modules/header'
+import Routes from 'src/modules/routes'
 import Footer from 'src/modules/footer'
-import SketchPad from 'src/pages/sketchpad'
 
-const App = () => (
+const App = ({ appRoutes }) => (
   <React.Fragment>
     <Header />
-    <SketchPad />
+    <Routes routes={appRoutes} />
     <Footer />
   </React.Fragment>
 )

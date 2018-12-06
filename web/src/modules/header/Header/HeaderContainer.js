@@ -4,7 +4,7 @@ import Header from './Header'
 
 const enhance = compose(
   setDisplayName('HeaderContainer'),
-  connect(({ user: { currentUser } }) => ({ currentUser }))
+  connect(({ auth: { currentUser } }) => ({ currentUser }))
 )
 
 export default enhance(Header)
