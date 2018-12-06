@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Page, PageHeader } from 'src/ui/page-layout'
 import SketchPadItem from '../SketchPadItem'
 
@@ -15,6 +16,14 @@ const DashboardPage = ({ sketchPadList }) => (
     )}
   </Page>
 )
+
+DashboardPage.propTypes = {
+  sketchPadList: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+    codeBlockCount: PropTypes.number
+  })).isRequired
+}
 
 DashboardPage.displayName = 'DashboardPage'
 

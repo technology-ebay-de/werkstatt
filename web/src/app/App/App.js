@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Header from 'src/modules/header'
 import Routes from 'src/modules/routes'
 import Footer from 'src/modules/footer'
@@ -14,5 +15,15 @@ const App = ({ appRoutes }) => (
   </Root>
 )
 
+App.propTypes = {
+  appRoutes: PropTypes.arrayOf(PropTypes.shape({
+    key: PropTypes.string,
+    path: PropTypes.string,
+    component: PropTypes.func,
+    exact: PropTypes.bool
+  })).isRequired
+}
+
 App.displayName = 'App'
+
 export default App
