@@ -1,6 +1,6 @@
 import React from 'react'
-import { LineChart, BarChart } from '../../chart'
-import Table from '../../table'
+import { LineChart, BarChart } from 'src/modules/chart'
+import Table from 'src/modules/table'
 
 export default function Output ({ output: { type, data } }) {
   switch (type) {

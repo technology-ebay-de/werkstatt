@@ -1,10 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const Root = styled('footer')(({ theme: { spacing, palette } }) => ({
-  padding: spacing.unit * 2,
-  background: palette.background.fold
-}))
+import { Root } from './styles'
 
 const Footer = () => (
   <Root>

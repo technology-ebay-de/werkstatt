@@ -1,17 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
 import Avatar from 'src/ui/avatar'
-
-const Root = styled('div')({
-  display: 'flex',
-  alignItems: 'center'
-})
-
-const Username = styled('span')(({ theme: { spacing } }) => ({
-  marginLeft: spacing.unit,
-  fontSize: 14,
-  fontWeight: 500
-}))
+import { Root, Username } from './styles'
 
 const Profile = ({ username, avatar }) => (
   <Root>
