@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Editor from '../../editor'
-import Paper from '../../../ui/paper'
-import Output from '../../output'
+import Editor from 'src/modules/editor'
+import Paper from 'src/ui/paper'
+import Output from 'src/modules/output'
 
 const Root = styled('div')(({ theme: { spacing } }) => ({
   marginTop: spacing.unit * 2,

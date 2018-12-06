@@ -1,7 +1,7 @@
 import { compose, setDisplayName, withHandlers, lifecycle } from 'recompose'
 import { connect } from 'react-redux'
-import { withThemeProvider } from '../../ui/theme'
-import { actions } from '../../modules/user'
+import { withThemeProvider } from 'src/ui/theme'
+import { actions } from 'src/modules/auth'
 import App from './App'
 
 const enhance = compose(

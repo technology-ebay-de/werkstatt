@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import CodeBlock from '../../../modules/code-block'
+import CodeBlock from 'src/modules/code-block'
 
 const Root = styled('main')(({ theme: { spacing } }) => ({
   padding: spacing.unit * 2,

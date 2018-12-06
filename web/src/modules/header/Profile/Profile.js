@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Avatar from '../../../ui/avatar'
+import Avatar from 'src/ui/avatar'
 
 const Root = styled('div')({
   display: 'flex',

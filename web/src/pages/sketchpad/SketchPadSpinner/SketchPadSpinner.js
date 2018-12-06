@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Spinner from '../../../ui/spinner'
+import Spinner from 'src/ui/spinner'
 
 const Root = styled('div')({
   display: 'flex',

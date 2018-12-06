@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../../modules/header'
-import Footer from '../../modules/footer'
-import SketchPad from '../../pages/sketchpad'
+import Header from 'src/modules/header'
+import Footer from 'src/modules/footer'
+import SketchPad from 'src/pages/sketchpad'
 
 const App = () => (
   <React.Fragment>
