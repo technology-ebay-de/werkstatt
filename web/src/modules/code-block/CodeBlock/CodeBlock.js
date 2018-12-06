@@ -3,18 +3,26 @@ import PropTypes from 'prop-types'
 import Editor from 'src/modules/editor'
 import Paper from 'src/ui/paper'
 import Output from 'src/modules/output'
-import { Root } from './styles'
+import { Root, Column } from './styles'
 
-const CodeBlock = ({ content: { code, output } }) => (
-  <Root>
-    <Editor code={code} />
-    {output && output.type !== 'none' && (
-      <Paper colorInvert padding>
-        <Output output={output} />
-      </Paper>
-    )}
-  </Root>
-)
+const CodeBlock = ({ content: { code, output } }) => {
+  const displayOutput = output && output.type !== 'none'
+  console.log({ displayOutput: !displayOutput })
+  return (
+    <Root>
+      <Column split={displayOutput}>
+        <Editor code={code} />
+      </Column>
+      {displayOutput && (
+        <Column split>
+          <Paper colorInvert padding>
+            <Output output={output} />
+          </Paper>
+        </Column>
+      )}
+    </Root>
+  )
+}
 
 CodeBlock.propTypes = {
   content: PropTypes.shape({

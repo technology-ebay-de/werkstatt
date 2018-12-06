@@ -13,8 +13,7 @@ export const Root = styled('header')(({ theme: { palette, spacing } }) => ({
   background: palette.background.fold
 }))
 
-export const Logo = styled('span')(({ theme: { palette } }) => ({
-  color: palette.primary.base,
+export const Logo = styled('span')({
   fontSize: 24,
   fontWeight: 500
-}))
+})

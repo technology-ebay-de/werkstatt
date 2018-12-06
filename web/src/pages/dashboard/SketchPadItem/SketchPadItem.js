@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Typography from 'src/ui/typography'
 import { Root, StyledLink } from './styles'
 
 const SketchPadItem = ({ id, title, codeBlockCount }) => (
   <Root padding>
-    <h4>{title}</h4>
+    <Typography as='h4' type='title'>{title}</Typography>
     <div>
-      <span>Code Block: {codeBlockCount}</span>
+      <span>Code Blocks: {codeBlockCount}</span>
     </div>
     <StyledLink to={`/sketchpad/${id}`}>View Sketch Pad »</StyledLink>
   </Root>

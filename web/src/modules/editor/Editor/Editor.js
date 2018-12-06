@@ -1,14 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
 import CodeMirror from 'codemirror'
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/theme/icecoder.css'
 import 'codemirror/mode/python/python'
-import './editor.css'
-
-const Root = styled('div')({
-  boxShadow: '0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)'
-})
+import { Root } from './styles'
 
 class Editor extends React.Component {
   constructor (props) {

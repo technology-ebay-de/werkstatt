@@ -20,7 +20,7 @@ module.exports = {
       '@neutrinojs/react',
       {
         html: {
-          title: 'werkstatt'
+          title: 'werk.statt'
         }
       }
     ],
