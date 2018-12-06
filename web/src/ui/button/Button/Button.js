@@ -5,11 +5,18 @@ import ButtonBase from '../ButtonBase'
 const variants = {
   filled: ({ palette }, color) => ({
     background: palette[color].base,
-    color: palette[color].text
+    color: palette[color].text,
+    '&:hover': {
+      background: palette[color].dark
+    }
   }),
   outline: ({ palette }, color) => ({
     border: `1px solid ${palette[color].base}`,
-    color: palette[color].base
+    color: palette[color].base,
+    '&:hover': {
+      border: `1px solid ${palette[color].dark}`,
+      color: palette[color].dark
+    }
   })
 }
 

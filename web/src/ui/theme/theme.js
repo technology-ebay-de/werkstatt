@@ -5,5 +5,8 @@ export default {
   typography,
   spacing: {
     unit: 8
+  },
+  layout: {
+    contentMaxWidth: 1240
   }
 }

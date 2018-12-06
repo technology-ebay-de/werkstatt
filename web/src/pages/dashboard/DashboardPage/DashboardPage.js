@@ -1,18 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 import { Page, PageHeader } from 'src/ui/page-layout'
+import Typography from 'src/ui/typography'
 import SketchPadItem from '../SketchPadItem'
+import { Section } from './styles'
 
 const DashboardPage = ({ sketchPadList }) => (
   <Page as='main'>
+    <Helmet title='Dashboard' />
     <PageHeader>
-      <h1>Dashboard</h1>
+      <Typography type='headline' as='h1'>Dashboard</Typography>
     </PageHeader>
     {sketchPadList && (
-      <section>
-        <h2>My Sketch Pads</h2>
+      <Section>
+        <Typography type='subheader' as='h2'>My Sketch Pads</Typography>
         {sketchPadList.map(item => <SketchPadItem key={item.id} {...item} />)}
-      </section>
+      </Section>
     )}
   </Page>
 )
@@ -22,7 +26,7 @@ DashboardPage.propTypes = {
     id: PropTypes.string,
     title: PropTypes.string,
     codeBlockCount: PropTypes.number
-  })).isRequired
+  }))
 }
 
 DashboardPage.displayName = 'DashboardPage'
