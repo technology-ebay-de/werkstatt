@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-const Page = styled('div')(({ theme: { spacing } }) => ({
+const Page = styled('div')(({ theme: { spacing, layout } }) => ({
   padding: spacing.unit * 2,
   margin: '0 auto',
-  maxWidth: 1024
+  maxWidth: layout.contentMaxWidth
 }))
 
 Page.displayName = 'Page'

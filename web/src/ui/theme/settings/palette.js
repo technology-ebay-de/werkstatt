@@ -1,6 +1,6 @@
 // Note
 // Uses this palette generator
-// https://palx.jxnblk.com/0077cc
+// https://palx.jxnblk.com/6cb6d9
 
 const grey = {
   900: '#2d2d2d',
@@ -20,11 +20,6 @@ const common = {
   white: '#f0f0f0'
 }
 
-const colors = {
-  primary: '#0077cc',
-  secondary: '#00cc55'
-}
-
 const dark = {
   background: {
     default: grey[900],
@@ -42,11 +37,15 @@ const dark = {
 export default {
   ...dark,
   primary: {
-    base: colors.primary,
+    light: '#6cb6d9',
+    base: '#61a4c4',
+    dark: '#5590ac',
     text: grey[50]
   },
   secondary: {
-    base: colors.secondary,
+    light: '#6cd9c5',
+    base: '#61c4b2',
+    dark: '#55ac9c',
     text: grey[50]
   }
 }
