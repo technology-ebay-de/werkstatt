@@ -8,8 +8,8 @@ import { Root } from './styles'
 const CodeBlock = ({ content: { code, output } }) => (
   <Root>
     <Editor code={code} />
-    {output && (
-      <Paper padding>
+    {output && output.type !== 'none' && (
+      <Paper colorInvert padding>
         <Output output={output} />
       </Paper>
     )}

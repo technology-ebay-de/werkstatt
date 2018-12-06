@@ -14,7 +14,7 @@ const SketchPadPage = ({ title, codeBlocks }) => (
 )
 
 SketchPadPage.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   codeBlocks: PropTypes.arrayOf(PropTypes.any)
 }
 
