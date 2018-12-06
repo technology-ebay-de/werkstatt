@@ -1,8 +1,8 @@
 import { applyMiddleware, createStore, compose } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import createInitialState from './createInitialState'
-import reducer from './reducer'
-import saga from './sagas'
+import rootReducer from './reducer'
+import rootSaga from './rootSaga'
 
 const initialState = createInitialState()
 
@@ -16,7 +16,7 @@ export default () => {
 
   const sagaMiddleware = createSagaMiddleware()
   const enhancer = composeEnhancer(applyMiddleware(sagaMiddleware))
-  const store = createStore(reducer, initialState, enhancer)
-  sagaMiddleware.run(saga)
+  const store = createStore(rootReducer, initialState, enhancer)
+  sagaMiddleware.run(rootSaga)
   return store
 }

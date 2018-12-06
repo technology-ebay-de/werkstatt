@@ -1,14 +1,17 @@
 import React from 'react'
-import Header from '../../modules/header'
-import Footer from '../../modules/footer'
-import SketchPad from '../../pages/sketchpad'
+import Header from 'src/modules/header'
+import Routes from 'src/modules/routes'
+import Footer from 'src/modules/footer'
+import { Root, Content } from './styles'
 
-const App = () => (
-  <React.Fragment>
+const App = ({ appRoutes }) => (
+  <Root>
     <Header />
-    <SketchPad />
+    <Content>
+      <Routes routes={appRoutes} />
+    </Content>
     <Footer />
-  </React.Fragment>
+  </Root>
 )
 
 App.displayName = 'App'

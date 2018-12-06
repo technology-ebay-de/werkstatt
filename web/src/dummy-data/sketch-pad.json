@@ -1,0 +1,110 @@
+{
+  "0CD4E44B-466D-4604-B6D0-8BBC73C11830": {
+    "id": "0CD4E44B-466D-4604-B6D0-8BBC73C11830",
+    "title": "Hello world",
+    "codeBlocks": {
+      "6A65DDB4-D04E-40FB-8251-D6090DBD72C9": {
+        "id": "6A65DDB4-D04E-40FB-8251-D6090DBD72C9",
+        "code": "from werkstatt import line_chart, bar_chart, table",
+        "output": {
+          "type": "none"
+        }
+      },
+      "FD64F96C-2B2B-4BF1-A4F2-356FAC3BC491": {
+        "id": "FD64F96C-2B2B-4BF1-A4F2-356FAC3BC491",
+        "code": "data = [\n    {'name': 'foo', 'value': 12 },\n    {'name': 'bar', 'value': 6 }\n]\n\nline_chart(data)",
+        "output": {
+          "type": "linechart",
+          "data": [
+            {
+              "name": "foo",
+              "value": 12
+            },
+            {
+              "name": "bar",
+              "value": 6
+            }
+          ]
+        }
+      },
+      "1A873322-3191-40F8-9986-ACBD6669B42E": {
+        "id": "1A873322-3191-40F8-9986-ACBD6669B42E",
+        "code":  "data = [\n    {'name': 'foo', 'value': 12 },\n    {'name': 'bar', 'value': 6 }\n]\n\nbar_chart(data)",
+        "output": {
+          "type": "barchart",
+          "data": [
+            {
+              "name": "foo",
+              "value": 12
+            },
+            {
+              "name": "bar",
+              "value": 6
+            }
+          ]
+        }
+      },
+      "55FE7855-0327-4D54-A187-0C7BF21B9E30": {
+        "id": "55FE7855-0327-4D54-A187-0C7BF21B9E30",
+        "code": "columns: [\n    {'Header': 'Name', 'accessor': 'name', 'minWidth': 20},\n    {'Header': 'Value','accessor': 'value'}\n]\n\ndata = [\n    {'name': 'foo', 'value': 12 },\n    {'name': 'bar', 'value': 6 }\n]\n\ntable(columns, data)",
+        "output": {
+          "type": "table",
+          "data": {
+            "data": [
+              {
+                "name": "foo",
+                "value": 12
+              },
+              {
+                "name": "bar",
+                "value": 6
+              }
+            ],
+            "columns": [
+              {
+                "Header": "Name",
+                "accessor": "name",
+                "minWidth": 20
+              },
+              {
+                "Header": "Value",
+                "accessor": "value"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "23B1EEE-1231-462D-98EC-03A04A565798": {
+    "id": "23B1EEE-1231-462D-98EC-03A04A565798",
+    "title": "Another World",
+    "codeBlocks": {
+      "EB51B5A8-0CDA-49AE-880F-E002FC8776D7": {
+        "id": "EB51B5A8-0CDA-49AE-880F-E002FC8776D7",
+        "code": "from werkstatt import bar_chart",
+        "output": {
+          "type": "none"
+        }
+      },
+      "AA12B2A8-0AC8-4457-AB8B-BC62C42D6F30": {
+        "id": "AA12B2A8-0AC8-4457-AB8B-BC62C42D6F30",
+        "code": "data = [\n    {'name': 'foo', 'value': 12 },\n    {'name': 'bar', 'value': 6 }\n]\n\nbar_chart(data)",
+        "output": {
+          "type": "barchart",
+          "data": [
+            {
+              "name": "foo",
+              "value": 12
+            },
+            {
+              "name": "bar",
+              "value": 6
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+

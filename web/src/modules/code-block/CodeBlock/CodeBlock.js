@@ -1,13 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
-import Editor from '../../editor'
-import Paper from '../../../ui/paper'
-import Output from '../../output'
-
-const Root = styled('div')(({ theme: { spacing } }) => ({
-  marginTop: spacing.unit * 2,
-  marginBottom: spacing.unit * 2
-}))
+import Editor from 'src/modules/editor'
+import Paper from 'src/ui/paper'
+import Output from 'src/modules/output'
+import { Root } from './styles'
 
 const CodeBlock = ({ content: { code, output } }) => (
   <Root>
