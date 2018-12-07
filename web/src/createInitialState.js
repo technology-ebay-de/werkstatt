@@ -1,7 +1,9 @@
 export default () => ({
-  sketchPad: {
+  sketchpad: {
     codeBlocks: []
-  }
+  },
+  sketchpadList: {},
+  auth: {}
 })
 
 // Note: you can also use this module to hydrate from an existing state (e.g. from server side rendering) like this:

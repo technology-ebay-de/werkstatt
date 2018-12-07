@@ -1,21 +1,22 @@
 import { compose, setDisplayName, lifecycle, withHandlers, branch } from 'recompose'
 import { connect } from 'react-redux'
-import { loadSketchPadDataAction } from '../actions'
-import SketchPadSpinner from '../SketchPadSpinner'
-import SketchPadPage from './SketchPadPage'
+import { loadSketchpadDataAction } from '../actions'
+import SketchpadSpinner from '../SketchpadSpinner'
+import SketchpadPage from './SketchpadPage'
 
 const enhance = compose(
-  setDisplayName('SketchPadPageContainer'),
-  connect(({ sketchPad: { title, codeBlocks, isLoading } }) => ({ title, codeBlocks, isLoading })),
-  branch(({ isLoading }) => isLoading, () => SketchPadSpinner),
+  setDisplayName('SketchpadPageContainer'),
+  connect(({ sketchpad: { title, codeBlocks, isLoading } }) => ({ title, codeBlocks, isLoading })),
+  branch(({ isLoading }) => isLoading, () => SketchpadSpinner),
   withHandlers({
-    loadSketchPadData: ({ dispatch }) => (id) => dispatch(loadSketchPadDataAction.request(id))
+    loadSketchPadData: ({ dispatch }) => (id) => dispatch(loadSketchpadDataAction.request(id))
   }),
   lifecycle({
     componentDidMount () {
-      this.props.loadSketchPadData('0CD4E44B-466D-4604-B6D0-8BBC73C11830')
+      const { match, loadSketchPadData } = this.props
+      loadSketchPadData(match.params.id)
     }
   })
 )
 
-export default enhance(SketchPadPage)
+export default enhance(SketchpadPage)

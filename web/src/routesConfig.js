@@ -1,17 +1,29 @@
-import Dashboard from './pages/dashboard'
-import SketchPad from './pages/sketchpad'
+import DashboardPage from './pages/dashboard'
+import SketchpadPage from './pages/sketchpad'
+import SketchpadListPage from './pages/sketchpad-list'
+import NotMatchPage from './pages/not-match'
 
 export default [
   {
-    key: 'dashboard',
+    key: 'dashboard-page',
     path: '/',
-    component: Dashboard,
+    component: DashboardPage,
     exact: true
   },
   {
-    key: 'sketchpad',
-    path: '/sketchpad/:id',
-    component: SketchPad,
+    key: 'sketchpad-list-page',
+    path: '/sketchpad',
+    component: SketchpadListPage,
     exact: true
+  },
+  {
+    key: 'sketchpad-page',
+    path: '/sketchpad/:id',
+    component: SketchpadPage,
+    exact: true
+  },
+  {
+    key: 'not-match-page',
+    component: NotMatchPage
   }
 ]

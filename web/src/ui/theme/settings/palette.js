@@ -29,7 +29,7 @@ const dark = {
   },
   text: {
     primary: grey[50],
-    secondary: grey[100],
+    secondary: grey[200],
     primaryInvert: grey[900]
   }
 }

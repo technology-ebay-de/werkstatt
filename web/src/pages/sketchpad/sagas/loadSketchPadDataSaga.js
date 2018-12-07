@@ -1,23 +1,23 @@
 import { put, takeLatest } from 'redux-saga/effects'
-import { loadSketchPadDataAction, LOAD_SKETCH_PAD_REQUEST } from '../actions'
-import { fetchSketchPadData } from '../utils'
+import { loadSketchpadDataAction, LOAD_SKETCHPAD_REQUEST } from '../actions'
+import { fetchSketchpadData } from '../utils'
 
-export function * loadSketchPadData ({ id }) {
+export function * loadSketchpadData ({ id }) {
   let data
   try {
-    data = fetchSketchPadData(id)
+    data = fetchSketchpadData(id)
   } catch (error) {
     if (process.env.NODE_ENV === 'development') {
       // eslint-disable-next-line no-console
       console.warn('error caught loading sketch pad data', error)
     }
-    loadSketchPadDataAction.failure(error)
+    loadSketchpadDataAction.failure(error)
   }
   if (data === null) {
     return
   }
-  yield put(loadSketchPadDataAction.success(data))
+  yield put(loadSketchpadDataAction.success(data))
 }
 export default function * () {
-  yield takeLatest(LOAD_SKETCH_PAD_REQUEST, loadSketchPadData)
+  yield takeLatest(LOAD_SKETCHPAD_REQUEST, loadSketchpadData)
 }

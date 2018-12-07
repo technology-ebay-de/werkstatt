@@ -78,7 +78,7 @@
   },
   "23B1EEE-1231-462D-98EC-03A04A565798": {
     "id": "23B1EEE-1231-462D-98EC-03A04A565798",
-    "title": "Another World",
+    "title": "Bar Chart Example",
     "codeBlocks": {
       "EB51B5A8-0CDA-49AE-880F-E002FC8776D7": {
         "id": "EB51B5A8-0CDA-49AE-880F-E002FC8776D7",
@@ -92,6 +92,100 @@
         "code": "data = [\n    {'name': 'foo', 'value': 12 },\n    {'name': 'bar', 'value': 6 }\n]\n\nbar_chart(data)",
         "output": {
           "type": "barchart",
+          "data": [
+            {
+              "name": "foo",
+              "value": 12
+            },
+            {
+              "name": "bar",
+              "value": 6
+            }
+          ]
+        }
+      }
+    }
+  },
+  "A3C365F6-C2D8-4A27-9D8F-E2AE78EDDD00": {
+    "id": "A3C365F6-C2D8-4A27-9D8F-E2AE78EDDD00",
+    "title": "Line Chart Example",
+    "codeBlocks": {
+      "C12BD0DF-A7F9-4FB2-B214-8609D413690D": {
+        "id": "C12BD0DF-A7F9-4FB2-B214-8609D413690D",
+        "code": "from werkstatt import line_chart",
+        "output": {
+          "type": "none"
+        }
+      },
+      "B6056D40-2556-4B11-9E40-9E10096FAE6C": {
+        "id": "B6056D40-2556-4B11-9E40-9E10096FAE6C",
+        "code": "data = [\n    {'name': 'foo', 'value': 12 },\n    {'name': 'bar', 'value': 6 }\n]\n\nline_chart(data)",
+        "output": {
+          "type": "linechart",
+          "data": [
+            {
+              "name": "foo",
+              "value": 12
+            },
+            {
+              "name": "bar",
+              "value": 6
+            }
+          ]
+        }
+      }
+    }
+  },
+  "9CB5BA4B-6EF2-4242-94AE-DEAC875AEC0A": {
+    "id": "9CB5BA4B-6EF2-4242-94AE-DEAC875AEC0A",
+    "title": "Familienoberhauptvogel",
+    "codeBlocks": {
+      "486C0A68-04D2-4D7B-A297-8113E8F1DF29": {
+        "id": "486C0A68-04D2-4D7B-A297-8113E8F1DF29",
+        "code": "from werkstatt import bar_chart",
+        "output": {
+          "type": "none"
+        }
+      },
+      "4CA491FB-6B32-4FAF-9D29-A579F3A4DACE": {
+        "id": "4CA491FB-6B32-4FAF-9D29-A579F3A4DACE",
+        "code": "data = [\n    {'name': 'lazer', 'value': 120 },\n    {'name': 'lauch', 'value': 0 },\n    {'name': 'roeder', 'value': 50 },\n]\n\nbar_chart(data)",
+        "output": {
+          "type": "linechart",
+          "data": [
+            {
+              "name": "lazer",
+              "value": 120
+            },
+            {
+              "name": "lauch",
+              "value": 0
+            },
+            {
+              "name": "roeder",
+              "value": 50
+            }
+          ]
+        }
+      }
+    }
+  },
+  "C9FB9F79-95A4-49FB-AAAD-482E455E3D60": {
+    "id": "C9FB9F79-95A4-49FB-AAAD-482E455E3D60",
+    "title": "Pika-Pika",
+    "codeBlocks": {
+      "D8A0DCE3-154A-4BEE-BD8C-89C2BC8D2C4F": {
+        "id": "D8A0DCE3-154A-4BEE-BD8C-89C2BC8D2C4F",
+        "code": "from werkstatt import line_chart",
+        "output": {
+          "type": "none"
+        }
+      },
+      "4177836D-0115-407F-AF9F-D1E660D5579AC": {
+        "id": "4177836D-0115-407F-AF9F-D1E660D5579A",
+        "code": "data = [\n    {'name': 'foo', 'value': 12 },\n    {'name': 'bar', 'value': 6 }\n]\n\nline_chart(data)",
+        "output": {
+          "type": "linechart",
           "data": [
             {
               "name": "foo",
