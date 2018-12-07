@@ -2,24 +2,24 @@
 
 [![Build Status](https://travis-ci.org/technology-ebay-de/werkstatt.svg?branch=master)](https://travis-ci.org/technology-ebay-de/werkstatt)
 
-Like Wordpress, but for coding.
+Like WordPress, but for coding.
 
 ## Rationale
 
-Coding is a powerful way in the digital age to get a computer doing what you want. But not everyone is a software engineer and is used to the ugly tools required to do coding nowadays.
+Coding is a powerful way to get a computer to do what you want. But not everyone is a software engineer, or willing to tolerate the ugly tools that are often used for coding.
 
-Wordpress allows everyone to write and publish content on the internet, without writing HTML all the time. Werkstatt does the same for coding. You do not need to learn Git or use a command line. Just code!
+WordPress allows everyone to write and publish content on the internet, without writing HTML all the time. Werkstatt does the same for coding. You don’t need to learn Git or use a command line. Just code!
 
-By giving coding a typical usability many people are used to, we can enable more people to code. This is an important step to push coding literacy in our companys and our society.
+By improving coding usability, we can enable more people to code. This is an important step to promote coding literacy in our companies and our society.
 
 ## Usage
 
 Currently werkstatt is a UI prototype and not fully usable. But we are working on it 😉.
 
-If you want to try out the prototype, follow the istructions in [web/README.md](web/README.md#usage).
+To try out the prototype, follow the instructions in [web/README.md](web/README.md#usage).
 
 ## License
 
-[MIT licensed](LICENSE)
+[MIT license](LICENSE)
 
 Copyright © 2018 [mobile.de GmbH](https://www.mobile.de)

@@ -1,16 +1,16 @@
 # werkstatt-web
 
-The browser based UI for werkstatt.
+The browser-based UI for werkstatt.
 
 ## Usage
 
 You can currently only run the UI prototype locally.
 
-### Prerequisite
+### Prerequisites
 
-To try out the prototype you will need [Node.js](https://nodejs.org/en/download/) version ≥ 10.
+To try out the prototype, you’ll need [Node.js](https://nodejs.org/en/download/) version ≥ 10.
 
-Please ensure your NPM version is also new enough. The easiest way is to update it to the latest version:
+Also make sure your NPM version is new enough. The easiest way is to update it to the latest version:
 
 ```sh
 npm install --global npm@latest
