@@ -24,3 +24,9 @@ FLASK_APP=werkstatt FLASK_ENV=development FLASK_RUN_PORT=5001 flask run
 ```
 
 Open [localhost:5001](http://localhost:5001) in your browser.
+
+## License
+
+[MIT licensed](LICENSE)
+
+Copyright © 2018 [mobile.de GmbH](https://www.mobile.de)
