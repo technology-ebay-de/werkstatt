@@ -1,13 +1,13 @@
 import { all, fork } from 'redux-saga/effects'
 import { sagas as authSagas } from './modules/auth'
-import { sagas as sketchPadSagas } from './pages/sketchpad'
-import { sagas as dashboardSagas } from './pages/dashboard'
+import { sagas as sketchpadListSagas } from './modules/sketchpad-list'
+import { sagas as sketchpadSagas } from './pages/sketchpad'
 
 export default function * rootSaga () {
   const sagas = [
     authSagas,
-    sketchPadSagas,
-    dashboardSagas
+    sketchpadListSagas,
+    sketchpadSagas
   ]
 
   yield all(sagas.map(saga => fork(saga)))

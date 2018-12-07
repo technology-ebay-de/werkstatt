@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 import { reducer as authReducer } from './modules/auth'
-import { reducer as dashboardReducer } from './pages/dashboard'
-import { reducer as sketchPadReducer } from './pages/sketchpad'
+import { reducer as sketchpadListReducer } from './modules/sketchpad-list'
+import { reducer as sketchpadReducer } from './pages/sketchpad'
 
 export default combineReducers({
-  sketchPad: sketchPadReducer,
+  sketchpadList: sketchpadListReducer,
   auth: authReducer,
-  dashboard: dashboardReducer
+  sketchpad: sketchpadReducer
 })

@@ -2,12 +2,12 @@ import React from 'react'
 import Spinner from 'src/ui/spinner'
 import { Root } from './styles'
 
-const DashboardSpinner = () => (
+const SketchpadListSpinner = () => (
   <Root>
     <Spinner />
   </Root>
 )
 
-DashboardSpinner.displayName = 'DashboardSpinner'
+SketchpadListSpinner.displayName = 'SketchpadListSpinner'
 
-export default DashboardSpinner
+export default SketchpadListSpinner

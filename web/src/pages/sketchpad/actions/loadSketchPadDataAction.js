@@ -1,18 +1,18 @@
-export const LOAD_SKETCH_PAD_REQUEST = 'pages/sketchpad/LOAD_SKETCH_PAD_REQUEST'
-export const LOAD_SKETCH_PAD_SUCCESS = 'pages/sketchpad/LOAD_SKETCH_PAD_SUCCESS'
-export const LOAD_SKETCH_PAD_FAILURE = 'pages/sketchpad/LOAD_SKETCH_PAD_FAILURE'
+export const LOAD_SKETCHPAD_REQUEST = 'pages/sketchpad/LOAD_SKETCHPAD_REQUEST'
+export const LOAD_SKETCHPAD_SUCCESS = 'pages/sketchpad/LOAD_SKETCHPAD_SUCCESS'
+export const LOAD_SKETCHPAD_FAILURE = 'pages/sketchpad/LOAD_SKETCHPAD_FAILURE'
 
-export const loadSketchPadDataAction = {
+export const loadSketchpadDataAction = {
   request: id => ({
-    type: LOAD_SKETCH_PAD_REQUEST,
+    type: LOAD_SKETCHPAD_REQUEST,
     id
   }),
   success: data => ({
-    type: LOAD_SKETCH_PAD_SUCCESS,
+    type: LOAD_SKETCHPAD_SUCCESS,
     data
   }),
   failure: error => ({
-    type: LOAD_SKETCH_PAD_FAILURE,
+    type: LOAD_SKETCHPAD_FAILURE,
     error
   })
 }

@@ -1,1 +1,1 @@
-export { default } from './SketchPadPageContainer'
+export { default } from './SketchpadPageContainer'

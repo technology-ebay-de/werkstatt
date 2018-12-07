@@ -3,22 +3,20 @@ import PropTypes from 'prop-types'
 import Typography from 'src/ui/typography'
 import { Root, StyledLink } from './styles'
 
-const SketchPadItem = ({ id, title, codeBlockCount }) => (
+const SketchpadItem = ({ id, title, codeBlockCount }) => (
   <Root padding>
     <Typography as='h4' type='title'>{title}</Typography>
-    <div>
-      <span>Code Blocks: {codeBlockCount}</span>
-    </div>
+    <Typography type='meta' marginBottom>Code Blocks: {codeBlockCount}</Typography>
     <StyledLink to={`/sketchpad/${id}`}>View Sketch Pad »</StyledLink>
   </Root>
 )
 
-SketchPadItem.propTypes = {
+SketchpadItem.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   codeBlockCount: PropTypes.number
 }
 
-SketchPadItem.displayName = 'SketchPadItem'
+SketchpadItem.displayName = 'SketchpadItem'
 
-export default SketchPadItem
+export default SketchpadItem
