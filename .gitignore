@@ -8,3 +8,9 @@
 .venv
 __pycache__/
 instance
+
+# Node.js specific
+node_modules
+.eslintcache
+build
+server/static
