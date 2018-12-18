@@ -7,3 +7,4 @@
 # Python specific
 .venv
 __pycache__/
+instance
