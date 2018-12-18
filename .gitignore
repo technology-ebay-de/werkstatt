@@ -1,2 +1,9 @@
+# VisualStudio Code specific
 .vscode
+
+# macOS specific
 .DS_Store
+
+# Python specific
+.venv
+__pycache__/
