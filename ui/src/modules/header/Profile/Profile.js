@@ -1,5 +1,5 @@
 import React from 'react'
-import Avatar from 'src/ui/avatar'
+import Avatar from 'ui/avatar'
 import { Root, Username } from './styles'
 
 const Profile = ({ username, avatar }) => (

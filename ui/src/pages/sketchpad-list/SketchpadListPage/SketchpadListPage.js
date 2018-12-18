@@ -1,10 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link as RouterLink } from 'react-router-dom'
-import { Page, PageHeader } from 'src/ui/page-layout'
-import Typography from 'src/ui/typography'
-import Link from 'src/ui/link'
-import SketchpadList from 'src/modules/sketchpad-list'
+import { Page, PageHeader } from 'ui/page-layout'
+import Typography from 'ui/typography'
+import Link from 'ui/link'
+import SketchpadList from 'modules/sketchpad-list'
 
 const SketchpadListPage = () => (
   <Page>

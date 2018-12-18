@@ -1,3 +1,3 @@
-import userData from 'src/dummy-data/user.json'
+import userData from 'dummy-data/user.json'
 
 export default () => userData

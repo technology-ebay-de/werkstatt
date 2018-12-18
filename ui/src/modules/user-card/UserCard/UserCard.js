@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Avatar from 'src/ui/avatar'
-import Typography from 'src/ui/typography'
+import Avatar from 'ui/avatar'
+import Typography from 'ui/typography'
 import { Root, Content, UsernameInfo } from './styles'
 
 const UserCard = ({ avatar, username, name }) => (

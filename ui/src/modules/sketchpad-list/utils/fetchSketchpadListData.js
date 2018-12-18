@@ -1,5 +1,5 @@
-import sketchPadData from 'src/dummy-data/sketch-pad.json'
-import { removeKeysFromObject } from 'src/utils'
+import sketchPadData from 'dummy-data/sketch-pad.json'
+import { removeKeysFromObject } from 'utils'
 
 export default ({ limit = null }) => {
   const data = Object.keys(sketchPadData).map(id => ({

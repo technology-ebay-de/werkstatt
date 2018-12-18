@@ -1,4 +1,4 @@
-import { loadSketchpadDataAction } from './loadSketchpadDataAction'
+import { loadSketchPadDataAction } from './loadSketchPadDataAction'
 
-export default { loadSketchpadDataAction }
-export * from './loadSketchpadDataAction'
+export default { loadSketchPadDataAction }
+export * from './loadSketchPadDataAction'

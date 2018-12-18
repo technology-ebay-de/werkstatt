@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Typography from 'src/ui/typography'
+import Typography from 'ui/typography'
 import { Root, StyledLink } from './styles'
 
 const SketchpadItem = ({ id, title, codeBlockCount }) => (

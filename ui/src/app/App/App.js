@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Header from 'src/modules/header'
-import Routes from 'src/modules/routes'
-import Footer from 'src/modules/footer'
+import Header from 'modules/header'
+import Routes from 'modules/routes'
+import Footer from 'modules/footer'
 import { Root, Content } from './styles'
 
 const App = ({ appRoutes }) => (

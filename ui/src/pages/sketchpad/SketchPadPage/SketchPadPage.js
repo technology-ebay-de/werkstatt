@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link as RouterLink } from 'react-router-dom'
-import CodeBlock from 'src/modules/code-block'
-import { Page, PageHeader } from 'src/ui/page-layout'
-import Typography from 'src/ui/typography'
-import Link from 'src/ui/link'
+import CodeBlock from 'modules/code-block'
+import { Page, PageHeader } from 'ui/page-layout'
+import Typography from 'ui/typography'
+import Link from 'ui/link'
 
 const SketchpadPage = ({ title, codeBlocks }) => (
   <Page as='main'>

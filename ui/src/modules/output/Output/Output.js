@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { LineChart, BarChart } from 'src/modules/chart'
-import Table from 'src/modules/table'
+import { LineChart, BarChart } from 'modules/chart'
+import Table from 'modules/table'
 
 const Output = ({ output: { type, data } }) => {
   switch (type) {

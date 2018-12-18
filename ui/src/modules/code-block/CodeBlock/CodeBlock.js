@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Editor from 'src/modules/editor'
-import Paper from 'src/ui/paper'
-import Output from 'src/modules/output'
+import Editor from 'modules/editor'
+import Paper from 'ui/paper'
+import Output from 'modules/output'
 import { Root, Column } from './styles'
 
 const CodeBlock = ({ content: { code, output } }) => {

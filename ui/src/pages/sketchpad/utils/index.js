@@ -1,1 +1,1 @@
-export { default as fetchSketchpadData } from './fetchSketchpadData'
+export { default as fetchSketchPadData } from './fetchSketchPadData'

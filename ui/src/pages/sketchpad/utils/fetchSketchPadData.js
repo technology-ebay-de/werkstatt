@@ -1,4 +1,4 @@
-import sketchPadData from 'src/dummy-data/sketch-pad.json'
+import sketchPadData from 'dummy-data/sketch-pad.json'
 
 export default (id) => {
   const data = sketchPadData[id]

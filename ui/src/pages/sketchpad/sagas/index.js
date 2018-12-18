@@ -1,6 +1,6 @@
 import { all, fork } from 'redux-saga/effects'
-import loadSketchpadDataSaga from './loadSketchpadDataSaga'
+import loadSketchPadDataSaga from './loadSketchPadDataSaga'
 
 export default function * sagas () {
-  yield all([fork(loadSketchpadDataSaga)])
+  yield all([fork(loadSketchPadDataSaga)])
 }

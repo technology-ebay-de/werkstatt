@@ -1,5 +1,5 @@
 import React from 'react'
-import Spinner from 'src/ui/spinner'
+import Spinner from 'ui/spinner'
 import { Root } from './styles'
 
 const SketchpadListSpinner = () => (

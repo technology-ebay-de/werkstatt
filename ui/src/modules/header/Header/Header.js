@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link as RouterLink } from 'react-router-dom'
-import Link from 'src/ui/link'
+import Link from 'ui/link'
 import Profile from '../Profile'
 import { Root, Logo } from './styles'
 

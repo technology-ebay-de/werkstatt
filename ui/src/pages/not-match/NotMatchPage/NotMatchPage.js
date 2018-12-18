@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link as RouterLink } from 'react-router-dom'
-import { Page, PageHeader } from 'src/ui/page-layout'
-import Typography from 'src/ui/typography'
-import Link from 'src/ui/link'
+import { Page, PageHeader } from 'ui/page-layout'
+import Typography from 'ui/typography'
+import Link from 'ui/link'
 import { Section, Image } from './styles'
 
 const NotMatchPage = () => (

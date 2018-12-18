@@ -1,1 +1,1 @@
-export { default } from './SketchpadSpinner'
+export { default } from './SketchPadSpinner'

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Paper from 'src/ui/paper'
+import Paper from 'ui/paper'
 
 export const Root = styled(Paper)(({ theme: { spacing } }) => ({
   marginTop: spacing.unit * 2,
