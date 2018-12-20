@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import SketchpadItem from '../SketchpadItem'
 
 const SketchpadList = ({ sketchpadList }) => {
-  console.log(sketchpadList)
   if (!sketchpadList) {
     return <div>No Sketchpad found</div>
   }

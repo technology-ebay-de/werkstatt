@@ -1,11 +1,11 @@
-import { put, takeLatest } from 'redux-saga/effects'
+import { put, takeLatest, call } from 'redux-saga/effects'
 import { loadSketchPadDataAction, LOAD_SKETCHPAD_REQUEST } from '../actions'
 import { fetchSketchPadData } from '../utils'
 
 export function * loadSketchpadData ({ id }) {
   let data
   try {
-    data = fetchSketchPadData(id)
+    data = yield call(fetchSketchPadData, id)
   } catch (error) {
     if (process.env.NODE_ENV === 'development') {
       // eslint-disable-next-line no-console

@@ -1,3 +1,3 @@
-import userData from 'dummy-data/user.json'
-
-export default () => userData
+export default () =>
+  fetch('/api/user/current/')
+    .then(response => response.json())

@@ -4,7 +4,7 @@ from flask import Flask
 
 
 def create_app(test_config=None):
-    app = Flask(__name__, static_url_path='', instance_relative_config=True)
+    app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
@@ -20,7 +20,13 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    from . import sketch_pad
-    app.register_blueprint(sketch_pad.bp)
+    from .page import page
+    app.register_blueprint(page)
+
+    from .user import user
+    app.register_blueprint(user)
+
+    from .sketch_pad import sketch_pad
+    app.register_blueprint(sketch_pad)
 
     return app

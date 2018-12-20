@@ -10,7 +10,7 @@ export default (state = initialState, action = {}) => {
     case LOAD_SKETCHPAD_LIST_REQUEST:
       return {
         ...state,
-        isLoading: true,
+        isLoading: false,
         error: null
       }
 
