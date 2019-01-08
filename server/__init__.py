@@ -8,8 +8,10 @@ def create_app(test_config=None):
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://werkstatt:werkstatt@localhost/werkstatt'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    from .db import db, migrate
+    from .model import db
     db.init_app(app)
+
+    from .db import migrate
     migrate.init_app(app, db)
 
     from .page import page
