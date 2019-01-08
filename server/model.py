@@ -1,4 +1,4 @@
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy.dialects.postgresql import UUID, TEXT
 from .db import db
 
 
@@ -11,3 +11,16 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User %r>' % self.username
+
+
+class SketchPad(db.Model):
+    id = db.Column(UUID(as_uuid=True), primary_key=True)
+    title = db.Column(db.String(255))
+    code_blocks = db.relationship("CodeBlock")
+
+
+class CodeBlock(db.Model):
+    id = db.Column(UUID(as_uuid=True), primary_key=True)
+    code = db.Column(TEXT)
+    sketch_pad_id = db.Column(UUID(as_uuid=True), db.ForeignKey(
+        'sketch_pad.id'), nullable=False)
