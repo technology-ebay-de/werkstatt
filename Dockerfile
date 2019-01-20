@@ -14,11 +14,11 @@ RUN apk add --no-cache --virtual .build-deps \
   python3-dev \
   musl-dev \
   postgresql-dev
+RUN pip3 install --upgrade pip
 ADD requirements-dev.txt /werkstatt/
 RUN pip3 install --no-cache-dir --requirement requirements-dev.txt
 ADD requirements.txt /werkstatt/
 RUN pip3 install --no-cache-dir --requirement requirements.txt --target requirements
-RUN apk del --no-cache .build-deps
 
 ADD server /werkstatt/server
 

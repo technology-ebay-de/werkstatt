@@ -5,7 +5,7 @@ from flask import Flask
 
 def create_app(test_config=None):
     app = Flask(__name__, static_url_path='')
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://werkstatt:werkstatt@localhost/werkstatt'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://werkstatt:werkstatt@db/werkstatt'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     from .model import db
