@@ -1,4 +1,10 @@
-export default (id) => fetch('/api/sketchpad/' + id + '/')
+const options = {
+  headers: {
+    'Accept': 'application/json'
+  }
+}
+
+export default (id) => fetch('/sketchpad/' + id, options)
   .then(response => response.json())
   .then(data => ({
     ...data,

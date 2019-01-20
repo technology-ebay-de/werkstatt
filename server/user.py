@@ -2,7 +2,7 @@ import os
 from flask import Blueprint, send_file
 
 
-user = Blueprint('user', __name__, url_prefix='/api/user')
+user = Blueprint('user', __name__, url_prefix='/user')
 
 
 @user.route('/current/')

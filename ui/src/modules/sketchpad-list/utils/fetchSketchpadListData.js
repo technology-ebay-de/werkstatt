@@ -1,7 +1,13 @@
 import { removeKeysFromObject } from 'utils'
 
+const options = {
+  headers: {
+    'Accept': 'application/json'
+  }
+}
+
 export default ({ limit = null }) => {
-  const data = fetch('/api/sketchpad/')
+  const data = fetch('/sketchpad', options)
     .then(response => response.json())
     .then(sketchPadData => Object.keys(sketchPadData)
       .map(id => ({
