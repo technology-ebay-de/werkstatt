@@ -1,0 +1,6 @@
+.venv
+.vscode
+ui/node_modules
+ui/build
+server/static
+__pycache__

@@ -1,2 +1,16 @@
+# VisualStudio Code specific
 .vscode
+
+# macOS specific
 .DS_Store
+
+# Python specific
+.venv
+__pycache__/
+instance
+
+# Node.js specific
+node_modules
+.eslintcache
+build
+server/static

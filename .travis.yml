@@ -1,11 +1,4 @@
-language: node_js
-node_js:
-  - "10"
+services:
+  - docker
 
-install:
-  - npm --prefix=web ci
-script: npm --prefix=web run-script lint
-
-cache:
-  directories:
-    - "$HOME/.npm"
+script: DOCKER_BUILDKIT=1 docker build -t werkstatt .
