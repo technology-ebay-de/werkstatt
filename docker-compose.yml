@@ -1,31 +1,10 @@
 version: '3.4'
 services:
-  server:
-    build:
-      context: .
-      target: build-server
-    depends_on:
-      - db
-    volumes:
-      - ./server:/werkstatt/server
-      - ./migrations:/werkstatt/migrations
-    ports:
-      - '5000:5000'
-    environment:
-      FLASK_APP: server
-      FLASK_ENV: development
-      PYTHONPATH: /werkstatt/requirements
-    networks:
-      - default
-    command: requirements/bin/flask run --host=0.0.0.0
-
   db:
-    image: 'postgres:11-alpine'
+    image: 'postgres:9.6-alpine'
     ports:
       - '5432:5432'
     environment:
       POSTGRES_USER: werkstatt
       POSTGRES_PASSWORD: werkstatt
       POSTGRES_DB: werkstatt
-    networks:
-      - default

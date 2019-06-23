@@ -15,6 +15,7 @@ RUN apk add --no-cache --virtual .build-deps \
   musl-dev \
   postgresql-dev
 RUN pip3 install --upgrade pip
+RUN pip3 install --no-cache-dir --target requirements gunicorn==19.9.0 psycopg2==2.8.3
 ADD requirements-dev.txt /werkstatt/
 RUN pip3 install --no-cache-dir --requirement requirements-dev.txt
 ADD requirements.txt /werkstatt/
